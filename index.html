@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang=en-US>
+
+<head>
+    <meta charset=utf-8>
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="i.css" rel=stylesheet>
+    <link href="https://fonts.googleapis.com/css?family=Kalam|Quattrocento|Tangerine|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+    <link href="style.css" rel=stylesheet>
+    <style>
+        .nav-pills .nav-link.active {
+            border-left: 2px solid #007bff;
+            background-color: transparent !important;
+        }
+        
+        .tab-content>.active {
+            display: flex !important;
+        }
+        
+        body {
+            font-family: 'Barlow Semi Condensed', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- EMBER_CLI_FASTBOOT_BODY -->
+
+    <div class="ember-view" id="ember3">
+        <!---->
+
+        <!---->
+        <!---->
+        <!---->
+        <div class="products">
+            <div class="products-index">
+                <div id="ember7" class="title-bar title-bar--dropdown-closed title-bar--signed-out ember-view">
+                    <div class="title-bar__content">
+
+                        <a href="{{ route('admin.auth.notifications.index')}}" id="ember43" class="title-bar__auth-button title-bar__auth-button--log-in ember-view">
+                            <span class="title-bar__button-label">Notification</span>
+                        </a>
+                        <a href="{{ route('adlin.auth.logout')}}" id="ember44" class="title-bar__auth-button title-bar__auth-button--sign-up ember-view">
+                            <span class="title-bar__button-label">Deconnexion</span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- HEADER --->
+                <header class="products-index__header">
+                    <img class="logoglyph" src="logoGTSP1.png">
+                    <!-- <img src="logo_GTSP.png" id="ember100" class="product-avatar__img img-lazy img-lazy--loaded ember-view" width="40" height="40" style="color:white"> -->
+
+                    <!-- <img src="logo_GTSP.png" id="ember100" class="product-avatar__img img-lazy img-lazy--loaded ember-view" width="40" height="40" style="color:white"> -->
+
+                    <p class="products-index__description">
+                        GENERAL TRANSPORT & SERVICES PETROLIERS
+                    </p>
+                    <!--  <button class="products-index__join-button">
+        <label>Add </label>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ember45" class="ember-view"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z">
+</path>
+</svg>
+      </button> -->
+                </header>
+
+                <div class="products-index__content">
+                    <div class="products-index__sidebar">
+
+
+
+                        <div class=" products-index__filters nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+
+                                <div id="ember49" class="collapsible-filters collapsible-filters--inactive collapsible-filters--nullifiable collapsible-filters--collapsed ember-view">
+
+                                    <div class="collapsible-filters__selected-text">
+                                        <div class="collapsible-filters__title">Configurations</div>
+
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ember50" class="collapsible-filters__expand-icon ember-view"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z">
+<!----></path>
+</svg>
+                                </div>
+                            </a>
+
+
+                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+
+                                <div id="ember51" class="collapsible-filters collapsible-filters--inactive collapsible-filters--nullifiable collapsible-filters--collapsed ember-view">
+                                    <div class="collapsible-filters__selected-text">
+                                        <div class="collapsible-filters__title">GMAO</div>
+
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ember52" class="collapsible-filters__expand-icon ember-view"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z">
+<!----></path>
+</svg>
+                                </div>
+                            </a>
+
+
+
+                            <a class="nav-link" id="v-pills-parc-tab" data-toggle="pill" href="#v-pills-parc" role="tab" aria-controls="v-pills-parc" aria-selected="false">
+
+                                <div id="ember53" class="collapsible-filters collapsible-filters--inactive collapsible-filters--nullifiable collapsible-filters--collapsed ember-view">
+                                    <div class="collapsible-filters__selected-text">
+                                        <div class="collapsible-filters__title">Gestion Parc Roulant</div>
+
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ember52" class="collapsible-filters__expand-icon ember-view"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z">
+                        <!----></path>
+                    </svg>
+                                </div>
+                            </a>
+
+                            <a class="nav-link" id="v-pills-parcveh-tab" data-toggle="pill" href="#v-pills-parcveh" role="tab" aria-controls="v-pills-parcveh" aria-selected="false">
+
+                                <div id="ember55" class="collapsible-filters collapsible-filters--inactive collapsible-filters--nullifiable collapsible-filters--collapsed ember-view">
+                                    <div class="collapsible-filters__selected-text">
+                                        <div class="collapsible-filters__title">Gestion Parc Engin</div>
+
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ember55" class="collapsible-filters__expand-icon ember-view"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z">
+                        <!----></path>
+                    </svg>
+                                </div>
+                            </a>
+                            <a class="nav-link" id="v-pills-exploitation-tab" data-toggle="pill" href="#v-pills-exploitation" role="tab" aria-controls="v-pills-exploitation" aria-selected="false">
+                                <div id="ember57" class="collapsible-filters collapsible-filters--inactive collapsible-filters--nullifiable collapsible-filters--collapsed ember-view">
+                                    <div class="collapsible-filters__selected-text">
+                                        <div class="collapsible-filters__title">Gestion des contrats & commandes</div>
+
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ember58" class="collapsible-filters__expand-icon ember-view"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z">
+<!----></path>
+</svg>
+                                </div>
+                            </a>
+
+                            <a class="nav-link" id="v-pills-stock-tab" data-toggle="pill" href="#v-pills-stock" role="tab" aria-controls="v-pills-exploitation" aria-selected="false">
+                                <div id="ember59" class="collapsible-filters collapsible-filters--inactive collapsible-filters--nullifiable collapsible-filters--collapsed ember-view">
+                                    <div class="collapsible-filters__selected-text">
+                                        <div class="collapsible-filters__title">Gestion des magasins et piéces de rechange</div>
+
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ember60" class="collapsible-filters__expand-icon ember-view"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z">
+<!----></path>
+</svg>
+                                </div>
+                            </a>
+                            <a class="nav-link" id="v-pills-audit-tab" data-toggle="pill" href="#v-pills-audit" role="tab" aria-controls="v-pills-exploitation" aria-selected="false">
+                                <div id="ember61" class="collapsible-filters collapsible-filters--inactive collapsible-filters--nullifiable collapsible-filters--collapsed ember-view">
+                                    <div class="collapsible-filters__selected-text">
+                                        <div class="collapsible-filters__title">Audites et inspections</div>
+
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ember62" class="collapsible-filters__expand-icon ember-view"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z">
+<!----></path>
+</svg>
+                                </div>
+                            </a>
+                            <a class="nav-link" id="v-pills-evenement-tab" data-toggle="pill" href="#v-pills-evenement" role="tab" aria-controls="v-pills-exploitation" aria-selected="false">
+
+                                <div id="ember63" class="collapsible-filters collapsible-filters--inactive collapsible-filters--nullifiable collapsible-filters--collapsed ember-view">
+                                    <div class="collapsible-filters__selected-text">
+                                        <div class="collapsible-filters__title">Registre des évenements</div>
+
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ember64" class="collapsible-filters__expand-icon ember-view"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z">
+<!----></path>
+</svg>
+                                </div>
+                            </a>
+
+                            <a class="nav-link" id="v-pills-doc-tab" data-toggle="pill" href="#v-pills-doc" role="tab" aria-controls="v-pills-exploitation" aria-selected="false">
+
+                                <div id="ember65" class="collapsible-filters collapsible-filters--inactive collapsible-filters--nullifiable collapsible-filters--collapsed ember-view">
+                                    <div class="collapsible-filters__selected-text">
+                                        <div class="collapsible-filters__title">Téléchargement manuels et modéles</div>
+
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ember66" class="collapsible-filters__expand-icon ember-view"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z">
+<!----></path>
+</svg>
+                                </div>
+                            </a>
+
+                            <a class="nav-link" id="v-pills-conf-tab" data-toggle="pill" href="#v-pills-conf" role="tab" aria-controls="v-pills-exploitation" aria-selected="false">
+
+                                <div id="ember67" class="collapsible-filters collapsible-filters--inactive collapsible-filters--nullifiable collapsible-filters--collapsed ember-view">
+                                    <div class="collapsible-filters__selected-text">
+                                        <div class="collapsible-filters__title">KPI's indicateurs clés de performance</div>
+
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ember68" class="collapsible-filters__expand-icon ember-view"><path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z">
+<!----></path>
+</svg>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="ember75" class="site-info ember-view">
+                            <div class="site-info__row">
+                                <a href="https://twitter.com/IndieHackers" class="site-info__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ember76" class="site-info__icon ember-view">
+</svg>
+                                    <span class="site-info__label">GTSP</span>
+                                </a>
+                            </div>
+
+                            <div class="site-info__row">
+                                <a href="" id="ember77" class="site-info__link ember-view">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="ember78" class="site-info__icon ember-view">
+</svg>
+                                    <span class="site-info__label">FAQ</span>
+                                </a> <span class="site-info__middot">·</span>
+                                <a href="" id="ember79" class="site-info__link ember-view">Terms</a>
+                                <span class="site-info__middot">·</span>
+                                <a href="" id="ember80" class="site-info__link ember-view">Privacy</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-index__main tab-content container " id="v-pills-tabContent">
+
+                        <div class="products-index__cards tab-pane fade show active row " id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div class="product-card ember-view col-md-5 col-12">
+
+                                <a href="{{ route('admin.auth.entreprise.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/buildings.png" style="" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Entreprise</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+          <?php
+
+              $entreprise = DB::table('entreprises')->count();
+            echo $entreprise;
+          ?>
+          <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">entreprise</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.typepermis.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/permission.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Type de permis</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+          <?php
+
+              $permis = DB::table('type_permis')->count();
+            echo $permis;
+          ?>
+          <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">types de permis</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.procedure.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/planner.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Modèles et Procédures</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+         <?php
+
+              $documents = DB::table('docitems')->count();
+            echo $documents;
+          ?>
+          <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">procedures</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.qualification.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/diploma.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Qualifications Personnels Engin</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+          <?php
+
+              $qualification_engin = DB::table('qualification_personnels')->count();
+            echo $qualification_engin;
+          ?>
+          <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">qualifications de personnels engin</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.qualificationPersoVehicule.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/certificate.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Qualifications Personnels Véhicules</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+
+           <?php
+              $qualification_veh = DB::table('qualification_personnels_veh')->count();
+            echo $qualification_veh;
+          ?>
+
+          <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">qualifications de personnels véhicule</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <!---->
+
+                        <div class="products-index__cards row tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.intervention.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/team.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Gestion des interventions</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+   <?php
+
+              $interventions = DB::table('interventions')->count();
+            echo $interventions;
+          ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">interventions</span>
+                                            </span>
+
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.travail.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/network.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Gestion de travail</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+   <?php
+
+              $travail = DB::table('travail_globals')->count();
+            echo $travail;
+          ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">month</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.retour.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/previous.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Retour GMAO</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+   <?php
+
+              $retour = DB::table('retour_gmaos')->count();
+            echo $retour;
+          ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">retour gestion maintenance</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.configmao.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/gears.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Configuration GMAO</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+      <?php
+     $config_gmao = DB::table('config_gmaos')->count();
+            echo $config_gmao;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">configurations gestion maintenance</span>
+                                            </span>
+
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+
+                        <!----->
+
+                        <div class="products-index__cards row tab-pane fade" id="v-pills-parc" role="tabpanel" aria-labelledby="v-pills-parc-tab">
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.Vehicle.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/vehicle.svg" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Véhicule</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+  <?php
+     $vehicule = DB::table('vehicles')->count();
+            echo $vehicule;
+
+  ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">véhicules</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.accessoirevehicule.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/acc2.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Accéssoires Véhicule</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+      <?php
+     $accessoireveh = DB::table('accessoire_vehicules')->count();
+            echo $accessoireveh;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">accessoires véhicules</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.personnelvehicule.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/personnel.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Personnels Véhicules</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+      <?php
+   $personnelveh = DB::table('personnels_vehicules')->count();
+            echo $personnelveh;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">personnels véhicules</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="products-index__cards row tab-pane fade" id="v-pills-parcveh" role="tabpanel" aria-labelledby="v-pills-parcveh-tab">
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.engin.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/engin.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Engin</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+      <?php
+   $engin = DB::table('engins')->count();
+            echo $engin;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">engins</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.accessoire.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/accengin.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Accéssoires Engin</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+    <?php
+   $accessoire = DB::table('accessoires')->count();
+            echo $accessoire;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">accessoires engin</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.personnel.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/personelveh.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Personnels Engins</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+  <?php
+   $personnels = DB::table('personnels')->count();
+            echo $personnels;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">personnels engins</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="products-index__cards row tab-pane fade" id="v-pills-exploitation" role="tabpanel" aria-labelledby="v-pills-exploitation-tab">
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.client.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/custmor.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Gestion Client</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+    <?php
+       $client = DB::table('clients')->count();
+            echo $client;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">clients</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.locations.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/location3.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Gestion Location</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+    <?php
+   $location = DB::table('locations')->count();
+            echo $location;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">locations</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="products-index__cards row tab-pane fade" id="v-pills-stock" role="tabpanel" aria-labelledby="v-pills-exploitation-tab">
+
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.magasin.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/magasin.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Gestion Magasin</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+    <?php
+   $magasin = DB::table('magasins')->count();
+            echo $magasin;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">magasins</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.fournisseur.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/fournisseur.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Gestion Fournisseurs</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+    <?php
+   $fournisseur = DB::table('fournisseurs')->count();
+            echo $fournisseur;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">fournisseurs</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.product.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/production.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Gestion Produits</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+    <?php
+   $product = DB::table('products')->count();
+            echo $product;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">produits</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.CategoryProduct.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/list.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Gestion Catègories</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+   <?php
+   $category = DB::table('category_products')->count();
+            echo $category;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">catégories</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.UnityMesure.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/libra.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Gestion Unité Mesure</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+    <?php
+   $unite = DB::table('unity_mesures')->count();
+            echo $unite;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">unités de mesures</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.bon.indexbentree')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/sales.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Gestion Entrée Stock</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+       <?php
+   $bone = DB::table('bon__entrers')->count();
+            echo $bone;
+      ?>
+
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">bons d'entrée stock</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.bon.indexbonsortie')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/sortie.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Gestion Sortie Stock</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+   <?php
+   $bons = DB::table('bon__sorties')->count();
+            echo $bons;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">bons sorties stocks</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.demandeachat.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/demande.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Gestion Demande d'achat</Dem></span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+   <?php
+   $demandea = DB::table('demande_achats')->count();
+            echo $demandea;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">demandes d'achats</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <div class=" product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.demandereap.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/newdemande.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Gestion Demande de Réapprovisionnement</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+   <?php
+   $demanderep = DB::table('demande_reaps')->count();
+            echo $demanderep;
+      ?>
+  <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">demandes de réapprovisionnement</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="products-index__cards row tab-pane fade" id="v-pills-audit" role="tabpanel" aria-labelledby="v-pills-exploitation-tab">
+                            <div class="product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.visit.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/visit.svg" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Audits et Visites</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+          <?php
+   $visite = DB::table('visites')->count();
+            echo $visite;
+      ?>
+          <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">visites</span>
+                                            </span>
+
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.auditorganisme.index') }}" id="ember88" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div id="ember89" class="product-card__logo product-avatar ember-view">
+                                            <img src="images/organisme.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Organisme d'audit</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+          <?php
+   $organismeaud = DB::table('audit_organismes')->count();
+            echo  $organismeaud;
+      ?>
+            <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">audits d'organisme</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.audittype.index')}}" id="ember93" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div id="ember94" class="product-card__logo product-avatar ember-view">
+                                            <img src="images/type.svg" id="ember95" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Types d'audit</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+            <?php
+   $typeaud = DB::table('audit_types')->count();
+            echo  $typeaud;
+      ?>
+          <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">types d'audits</span>
+                                            </span>
+
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="products-index__cards row tab-pane fade" id="v-pills-evenement" role="tabpanel" aria-labelledby="v-pills-exploitation-tab">
+                            <div class="product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.evenement.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/event.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Evenements</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+           <?php
+   $events = DB::table('evenements')->count();
+            echo  $events;
+      ?>
+          <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">evenements</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="products-index__cards row tab-pane fade" id="v-pills-doc" role="tabpanel" aria-labelledby="v-pills-exploitation-tab">
+                            <div class="product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.docregl.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/doc3.png" id="ember113" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Documents et Réglémentations</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+          <?php
+   $docreglementaire = DB::table('doc_reglementaires')->count();
+            echo  $docreglementaire;
+      ?>
+          <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">documents et réglémentations</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="products-index__cards row tab-pane fade" id="v-pills-conf" role="tabpanel" aria-labelledby="v-pills-exploitation-tab">
+                            <div class="product-card ember-view col-md-5 col-12">
+
+                                <a href="{{ route('admin.auth.entreprise.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/buildings.png" style="" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Entreprise</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+          <?php
+
+              $entreprise = DB::table('entreprises')->count();
+            echo $entreprise;
+          ?>
+          <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">entreprise</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.typepermis.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/permission.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Type de permis</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+          <?php
+
+              $permis = DB::table('type_permis')->count();
+            echo $permis;
+          ?>
+          <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">types de permis</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.procedure.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/planner.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Modèles et Procédures</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+         <?php
+
+              $documents = DB::table('docitems')->count();
+            echo $documents;
+          ?>
+          <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">procedures</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.qualification.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/diploma.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Qualifications Personnels Engin</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+          <?php
+
+              $qualification_engin = DB::table('qualification_personnels')->count();
+            echo $qualification_engin;
+          ?>
+          <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">qualifications de personnels engin</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="product-card ember-view col-md-5 col-12">
+                                <a href="{{ route('admin.auth.qualificationPersoVehicule.index')}}" class="product-card__link ember-view">
+                                    <div class="product-card__header">
+                                        <div class="product-card__logo product-avatar ember-view">
+                                            <img src="images/certificate.png" class="product-avatar__img img-lazy img-lazy--loaded ember-view">
+                                        </div>
+                                        <div class="product-card__header-text">
+                                            <span class="product-card__name">Qualifications Personnels Véhicules</span>
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="product-card__revenue">
+                                        <div class="product-card__revenue-text">
+                                            <span class="product-card__revenue-number">
+
+           <?php
+              $qualification_veh = DB::table('qualification_personnels_veh')->count();
+            echo $qualification_veh;
+          ?>
+
+          <span class="product-card__revenue-slash">/</span>
+                                            <span class="product-card__revenue-period">qualifications de personnels véhicule</span>
+                                            </span>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <script src="i1.js"></script> -->
+    <script src="i2.js"></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js async></script>
+</body>
+
+</html>
